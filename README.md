@@ -95,9 +95,9 @@ A complete visual and functional redesign of the Skip hire page for REMWaste web
 
 For questions, suggestions or feedback:  
 **Chibuzor Ebede** – Fullstack Developer  
-📫 chibuzorebede@example.com  
-🌐 [chibuzor.online](https://chibuzor.online)
+📫 chibuzorebede@gmail.com  
+🌐 [chibuzor.online](https://www.chibuzor.online)
 
 ---
 
-© 2025 Chibuzor Ebede. All rights reserved.
+© 2025 C.E for REMWaste Technical Test. All rights reserved.
