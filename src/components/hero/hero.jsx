@@ -14,8 +14,8 @@ const Hero = () => {
             skip for you.
           </p>
         </div>
-        <div className="flex-2/5 pt-4 md:pt-0">
-          <img src="/4-yarder-skip.jpg" alt="skip image" />
+        <div className="hidden md:block flex-2/5 pt-4 md:pt-0">
+          <img src="/bucket.png" alt="skip image" />
         </div>
       </div>
       <SearchSkip />

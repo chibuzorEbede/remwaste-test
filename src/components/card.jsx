@@ -1,7 +1,9 @@
 import React from "react";
-import { Pill, NoIconPill } from "./pill";
+import { Pill, NoIconPill, WarningPill } from "./pill";
 import Button from "./button";
 import { getBodyText } from "../utils";
+import { PiResizeFill } from "react-icons/pi";
+import { FaCalendarAlt } from "react-icons/fa";
 
 const Card = ({ skipItem }) => {
   //destructure the item contents
@@ -12,22 +14,27 @@ const Card = ({ skipItem }) => {
     <aside className="shadow-sm rounded-bl-md rounded-br-md  transition-all cursor-pointer">
       <div>
         <img
-          src="/4-yarder-skip.jpg"
+          src="/bucket.png"
           alt="card header image"
           className="rounded-tl-md rounded-tr-md w-full"
         />
       </div>
       <div className="p-4">
         <div className="flex gap-3">
-          <Pill text={`${size} yard skip`} />
-          <Pill text={`${hire_period_days}-day hire`} />
+          <Pill text={`${size} yard skip`} icon={<PiResizeFill />} />
+          <Pill
+            text={`${hire_period_days}-day hire`}
+            icon={<FaCalendarAlt />}
+          />
           <NoIconPill text={`${price_before_vat}`} />
         </div>
         <div className="pt-2">
           {allowed_on_road ? (
             <Pill text={`Allowed on the road`} />
           ) : (
-            <Pill text={`Not allowed on road`} />
+            <>
+              <WarningPill text={`Not allowed on road`} />
+            </>
           )}
         </div>
         <p className="text-[#263238] pt-2">{getBodyText(size)}</p>
